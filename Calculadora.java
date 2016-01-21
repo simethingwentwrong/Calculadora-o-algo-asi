@@ -39,13 +39,68 @@ public class Calculadora
     {
         int sumando = 0;
         int suma = 0;
-        while (sumando >=0 && sumando <= 10)
+        while ( sumando < 10)
        {
            sumando = sumando + 1;
            suma = suma + sumando;           
   
         }
-        System.out.println("La suma de los numeros de 0 a 10 " + suma);
+        System.out.println("La suma de los numeros de 0 a 10: " + suma);
+    }
+    
+     /**
+     * suma valores intervalo
+     */
+    public void sumValues(int a, int b)
+    {
+       
+        int suma = 0;
+       if (b < a )
+       {
+          int c = b;
+           b = a;
+           a = c;
+             while (a < b)
+         {
+           a = a + 1;
+           suma = suma + a;           
+  
+         }
+        }
+        else 
+        {
+             System.out.println("Error tienen que ser numeros positivos");
+             suma = -1;
+        }          
+      
+        System.out.println("La suma de los numeros de 0 a 10: " + suma);
+    }
+    
+    /**
+     * metodo que dice sobre el numero si es primo o no
+     */
+    public boolean isPrime (int n)
+    {
+        boolean esPrimo = true;
+        if (n>1)
+        {
+            int numero = 0;
+            while (2 <=(n-(numero+1)))
+            {
+                numero = numero + 1;
+                int division = (n % (n - numero));
+                if (division == 0)
+                {
+                    esPrimo = false;
+                }
+            }
+        }
+        else
+        {
+            System.out.println("Valor no valido tiene que ser mallor de uno");
+            esPrimo = false;
+        }
+        return (esPrimo);
     }
 }
 
