@@ -51,29 +51,34 @@ public class Calculadora
      /**
      * suma valores intervalo
      */
-    public void sumValues(int a, int b)
+    public int sumValuesInterval(int a, int b)
     {
        
         int suma = 0;
-       if (b < a )
+        if( a < 0 || b < 0) 
+        {
+             System.out.println("Error tienen que ser numeros positivos");
+             suma = -1;
+        }      
+       else if (b < a )
        {
-          int c = b;
+          int c = b;           
            b = a;
            a = c;
-             while (a < b)
+         
+        }
+        
+        else
+        {
+            while (a < b)
          {
            a = a + 1;
            suma = suma + a;           
   
          }
         }
-        else 
-        {
-             System.out.println("Error tienen que ser numeros positivos");
-             suma = -1;
-        }          
       
-        System.out.println("La suma de los numeros de 0 a 10: " + suma);
+        return (suma);
     }
     
     /**

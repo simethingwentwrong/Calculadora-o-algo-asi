@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ testIsPrime()
+comment0.text=\r\n\ M\u00E9todo\ que\ prueba\ si\ el\ funcionamiento\ de\ isPrime\ es\ correcto.\r\n
+comment1.params=
+comment1.target=void\ testSumValuesInterval()
+comment1.text=\r\n\ M\u00E9todo\ que\ prueba\ si\ el\ funcionamiento\ de\ sumValuesInterval\ es\ correcto.\r\n
+numComments=2
