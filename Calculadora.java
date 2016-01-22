@@ -64,20 +64,17 @@ public class Calculadora
        {
           int c = b;           
            b = a;
-           a = c;
-         
-        }
+           a = c;          
         
-        else
-        {
             while (a < b)
          {
            a = a + 1;
            suma = suma + a;           
   
          }
-        }
-      
+        
+        }    
+           
         return (suma);
     }
     
@@ -106,6 +103,21 @@ public class Calculadora
             esPrimo = false;
         }
         return (esPrimo);
+    }
+    
+    /**
+     * metodo que multiplica
+     */
+    public int multiplicacion (int num1, int num2)
+    {       
+       int cont = 1;
+       int resultado = 0;
+       while (cont <= num2)
+       {
+         cont ++;
+         resultado = resultado + num1;       
+       }  
+       return (num2);
     }
 }
 
